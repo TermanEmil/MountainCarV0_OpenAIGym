@@ -3,8 +3,10 @@
 ![](./images/mountain_car_solved.gif)
 
 **Episodes required to train:** 100-200
+
 **Time to train:** 3-10 minutes
-**Algorithm used:** Double Deep Q Learning
+
+**Algorithm used:** Double Deep Q Learning (DDQN)
 
 ### Details
 By default, the environment comes with a limit of 200 steps per episode. To make it easier for the agent to learn, I use something like Curriculum Learning. First, the maximum number of steps is set to 1500 to allow the agent to explore easier. When it learns to reach the target, the maximum is reduced to 500, then to 200. After that, the reward function is updated.
